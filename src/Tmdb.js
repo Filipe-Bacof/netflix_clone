@@ -1,3 +1,4 @@
+/* eslint-disable default-case */
 /* eslint-disable import/no-anonymous-default-export */
 // API ------> https://www.themoviedb.org/
 // Abaixo a chave da API e também o inicio da URL para requisições
@@ -65,5 +66,23 @@ export default {
                 items: await basicFetch(`/discover/movie?with_genres=99&language=pt-BR&api_key=${API_KEY}`)
             },
         ];
+    },
+
+    getMovieInfo: async (movieId, type) => {
+        let info = {};
+
+        if (movieId) {
+            switch(type) {
+                case 'movie':
+                    info = await basicFetch(`/movie/${movieId}?language=pt-BR&api_key=${API_KEY}`);
+                break;
+                case 'tv':
+                    info = await basicFetch(`/tv/${movieId}?language=pt-BR&api_key=${API_KEY}`);
+                break;
+            }
+        }
+        return info;
     }
+
+
 }
