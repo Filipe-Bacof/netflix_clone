@@ -12,7 +12,7 @@
 }
 
 .movieRow--list {
-  width: 999999999999px; /* vai ser removido depois */
+  transition: all ease 0.5s;
 }
 
 .movieRow--item {
