@@ -67,6 +67,11 @@ export default () => {
 
       <Footer />
 
+      {movieList.length <= 0 &&
+      <div className='loading'>
+          <img src='https://media.wired.com/photos/592744d3f3e2356fd800bf00/master/w_2560%2Cc_limit/Netflix_LoadTime.gif' alt='Carregando...'></img>
+      </div>
+      }
     </div>
   );
 }
