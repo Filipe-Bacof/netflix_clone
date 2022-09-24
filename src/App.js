@@ -5,6 +5,7 @@ import "./App.css";
 import MovieRow from './components/MovieRow';
 import FeaturedMovie from './components/FeaturedMovie';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 export default () => {
@@ -63,6 +64,9 @@ export default () => {
           < MovieRow key={key} title={item.title} items={item.items} />
         ))}
       </section>
+
+      <Footer />
+
     </div>
   );
 }
