@@ -65,6 +65,7 @@ export default () => {
         ))}
       </section>
 
+      {/* O Footer está muito simples. é possivel fazer algo mais elaborado depois. porém transmite a mensagem que deve transmitir */}
       <Footer />
 
       {movieList.length <= 0 &&
