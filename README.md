@@ -1,6 +1,9 @@
 # Netflix Clone!
 ### made with React JS <br/><br/>
 
+https://filipe-bacof.github.io/netflix_clone/build/index.html
+- If you update the page (F5) - a new movie will appear in `featured`
+
 - "Ultra-High-Resolution" GIF:
 `there is also a video with good resolution in the root folder` <br/>
 <img width='500px' src='demonstration-smallsize.gif' alt='gif da tela funcionando' />
